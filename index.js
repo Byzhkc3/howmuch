@@ -16,8 +16,33 @@ var much = (function(){
              alert('请输入产品名称');
              return false;
          }
+         var list = [
+             'qq',
+             'QQ',
+             'JD',
+             '腾讯',
+             '阿里巴巴',
+             '京东',
+             '淘宝',
+             '天猫',
+             '支付宝',
+             '网易',
+             '美图',
+             '谷歌',
+             '百度',
+             '大搜车',
+             '知乎',
+             '咸鱼'
+         ];
 
          var rand = Math.round(Math.random()*150);
+
+         for(var i = 0;i<list.length;i++){
+             if(list[i] === val){
+                rand = Math.round(Math.random()*999);
+             }
+         }
+
          var left = Math.round(Math.random()* rand);
          var mid = Math.round(Math.random()* rand);
          var right =  Math.round(Math.random()* rand);
