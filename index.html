@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>开发一款产品需要多少钱？</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <div class="wrap">
+        <p class="title">How much?</p>
+        <div class="from">
+            <p>输入想要仿制的某款互联网产品名称</p>
+            <div>
+                <input type="text" id="input" placeholder="如：淘宝">
+                <a href="javascript:;" id="btn">开始计算</a>
+            </div>
+        </div>
+        <div class="muchInfo" id="muchInfo">
+            <p>开发一款类似 「<span id="product"></span>」 的产品大概需要 </p>
+            <span id="much"></span>
+            <p class="message">计算结果仅供娱乐，请勿用于其他用途。</p>
+        </div>
+
+    </div>
+    <canvas id="c"></canvas>
+    <script src="./index.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>
